@@ -1,7 +1,14 @@
+//init allEnemies Array
+//for each enemy create and push new enemy object into above array
+
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
+
+    //x position
+    //y position
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
@@ -14,6 +21,12 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
+
+    //if enemy is not passed boundary
+        //move forward
+        //increment x by speed * dt
+    //else
+      //reset position to start
 };
 
 // Draw the enemy on the screen, required method for game
@@ -64,3 +77,8 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+//new hero objects
+
+//init allEnemies Array
+//for each enemy create and push new enemy object into above array
