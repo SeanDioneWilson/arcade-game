@@ -30,7 +30,27 @@ Enemy.prototype.render = function() {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
+//Hero class
+  //Constructor
+      //properties
+          //x position
+          //y position
+          //sprite image
+      //methods
+          //update position
+            //checkCollisions
+              //did play x and y collide with Enemy
+            //check
+              // did player x and y reach final tile?
 
+          //render
+            //draw sprite on current x and y position
+
+          //handle keyboard input
+           //update plyers x and y according to input
+
+          //reset hero
+            //set x and y to starting x and y
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
