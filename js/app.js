@@ -1,5 +1,4 @@
 
-
 // Enemies our player must avoid
 var Enemy = function() {
 
@@ -39,21 +38,21 @@ class Hero {
     this.y = 0;
     this.sprite = '../images/char-boy.png'
   }
+
+  //draw sprite on current x and y position
+  render() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  }
 }
-  //Constructor
-      //properties
-          //x position
-          //y position
-          //sprite image
+
+const player = new Hero();
+
       //methods
           //update position
             //checkCollisions
               //did play x and y collide with Enemy
             //check
               // did player x and y reach final tile?
-
-          //render
-            //draw sprite on current x and y position
 
           //handle keyboard input
            //update plyers x and y according to input
