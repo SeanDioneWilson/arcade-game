@@ -46,6 +46,7 @@ var Engine = (function(global) {
          */
         update(dt);
         render();
+        renderEntities();
 
         /* Set our lastTime variable which is used to determine the time delta
          * for the next time this function is called.
@@ -149,9 +150,9 @@ var Engine = (function(global) {
         /* Loop through all of the objects within the allEnemies array and call
          * the render function you have defined.
          */
-        allEnemies.forEach(function(enemy) {
-            enemy.render();
-        });
+        // allEnemies.forEach(function(enemy) {
+        //     enemy.render();
+        // });
 
         player.render();
     }
